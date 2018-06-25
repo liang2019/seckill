@@ -8,6 +8,7 @@ import com.liang.dto.SeckillExecution;
 import com.liang.entity.Seckill;
 import com.liang.entity.SuccessKilled;
 import com.liang.enums.SeckillStatEnum;
+import com.liang.enums.TestEnum;
 import com.liang.exception.RepeatKillException;
 import com.liang.exception.SeckillCloseException;
 import com.liang.exception.SeckillException;
@@ -24,16 +25,19 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 
-/**
- * @author liming
- * @date 2018/5/15   21:03
+/*
+ *  Created by IntelliJ IDEA.
+ *  User: wangliang
+ *  Date: 2018/6/21
+ *  Time: 14:00
+ *  Description:
  */
 @Service
 public class SeckillServiceImpl implements SeckillService {
     //日志对象
     private Logger logger = LoggerFactory.getLogger(this.getClass());
     //加入一个混淆字符串，避免用户猜出我们的MD5值
-    private final String salt = "liming@stay_Hungry";
+    private final String salt = "waefsfasdfasdfasdfasvrqgh";
     @Autowired
     private SeckillDao seckillDao;
 
@@ -44,7 +48,7 @@ public class SeckillServiceImpl implements SeckillService {
     private RedisDao redisDao;
 
     public List<Seckill> getSeckillList() {
-        return seckillDao.queryAll(0, 4);
+        return seckillDao.queryAll(0, 10);
     }
 
     public Seckill getById(long seckillId) {

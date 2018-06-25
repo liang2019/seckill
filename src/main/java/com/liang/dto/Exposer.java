@@ -1,8 +1,11 @@
 package com.liang.dto;
 
-/**
- * @author liming
- * @date 2018/5/15   19:41
+/*
+ *  Created by IntelliJ IDEA.
+ *  User: wangliang
+ *  Date: 2018/6/21
+ *  Time: 14:00
+ *  Description:
  */
 public class Exposer {
     //是否开启秒杀

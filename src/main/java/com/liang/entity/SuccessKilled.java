@@ -1,7 +1,13 @@
 package com.liang.entity;
 
 import java.util.Date;
-
+/*
+ *  Created by IntelliJ IDEA.
+ *  User: wangliang
+ *  Date: 2018/6/21
+ *  Time: 14:00
+ *  Description:
+ */
 public class SuccessKilled {
     private long seckillId;
     private long userPhone;

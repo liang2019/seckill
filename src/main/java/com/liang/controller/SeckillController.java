@@ -16,9 +16,12 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Date;
 import java.util.List;
 
-/**
- * @author liming
- * @date 2018/5/16   11:03
+/*
+ *  Created by IntelliJ IDEA.
+ *  User: wangliang
+ *  Date: 2018/6/21
+ *  Time: 14:00
+ *  Description:
  */
 @Controller
 @RequestMapping("/seckill")//url:模块/资源/{}/细分
@@ -90,9 +93,9 @@ public class SeckillController {
         SeckillResult<SeckillExecution> result;
 
         try {
-         //   SeckillExecution execution = seckillService.executeSeckill(seckillId, userPhone, md5);
+            SeckillExecution execution = seckillService.executeSeckill(seckillId, userPhone, md5);
             //换成存储过程
-            SeckillExecution execution =  seckillService.executeSeckillProcedure(seckillId,userPhone,md5);
+//            SeckillExecution execution =  seckillService.executeSeckillProcedure(seckillId,userPhone,md5);
             return new SeckillResult<SeckillExecution>(true, execution);
         }catch (RepeatKillException e1)
         {

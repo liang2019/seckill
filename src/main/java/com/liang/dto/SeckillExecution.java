@@ -3,10 +3,12 @@ package com.liang.dto;
 import com.liang.entity.SuccessKilled;
 import com.liang.enums.SeckillStatEnum;
 
-/**
- * @author liming
- * @date 2018/5/15   19:56
- * 封装执行秒杀后的结果:是否秒杀成功
+/*
+ *  Created by IntelliJ IDEA.
+ *  User: wangliang
+ *  Date: 2018/6/21
+ *  Time: 14:00
+ *  Description:
  */
 public class SeckillExecution {
     private long seckillId;

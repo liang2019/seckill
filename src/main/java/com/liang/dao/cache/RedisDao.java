@@ -9,9 +9,12 @@ import org.slf4j.LoggerFactory;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 
-/**
- * @author liming
- * @date 2018/5/19   11:56
+/*
+ *  Created by IntelliJ IDEA.
+ *  User: wangliang
+ *  Date: 2018/6/21
+ *  Time: 14:00
+ *  Description:
  */
 public class RedisDao {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());

@@ -1,8 +1,11 @@
 package com.liang.enums;
 
-/**
- * @author liming
- * @date 2018/5/15   20:12
+/*
+ *  Created by IntelliJ IDEA.
+ *  User: wangliang
+ *  Date: 2018/6/21
+ *  Time: 14:00
+ *  Description:
  */
 public enum SeckillStatEnum {
     SUCCESS(1,"秒杀成功"),

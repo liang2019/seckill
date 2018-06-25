@@ -1,10 +1,11 @@
 package com.liang.dto;
 
-/**
- * @author liming
- * @date 2018/5/15   20:24
- *
- *将所有的ajax请求返回类型，全部封装成json数据
+/*
+ *  Created by IntelliJ IDEA.
+ *  User: wangliang
+ *  Date: 2018/6/21
+ *  Time: 14:00
+ *  Description:将所有的ajax请求返回类型，全部封装成json数据
  */
 public class SeckillResult<T> {
     //请求是否成功
